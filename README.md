@@ -71,21 +71,15 @@ make test
    curl -X POST http://localhost:8080/receipts/process \
    -H "Content-Type: application/json" \
    -d '{
-        "retailer": "Target",
-        "purchaseDate": "2022-01-01",
-        "purchaseTime": "13:01",
-        "items": [
-          {
-            "shortDescription": "Mountain Dew 12PK",
-            "price": "6.49"
-          },
-          {
-            "shortDescription": "Emils Cheese Pizza",
-            "price": "12.25"
-          }
-        ],
-        "total": "18.74"
-      }'
+       "retailer": "Walgreens",
+       "purchaseDate": "2022-01-02",
+       "purchaseTime": "08:13",
+       "total": "2.65",
+       "items": [
+           {"shortDescription": "Pepsi - 12-oz", "price": "1.25"},
+           {"shortDescription": "Dasani", "price": "1.40"}
+       ]
+   }'
     ```
    
 2. Get Points
